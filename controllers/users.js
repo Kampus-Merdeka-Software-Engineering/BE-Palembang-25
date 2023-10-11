@@ -4,7 +4,7 @@ import { httpStatusMesage } from "../constants/httpStatusMessage.js";
 
 export const postCreateUser = async (request, response) => {
   const { userName, password, email, beratBadan, tinggiBadan, jenisKelamin } = request.body;
-  const user = await createBook(userName, password, email, beratBadan, tinggiBadan, jenisKelamin);
+  const user = await createUser(userName, password, email, beratBadan, tinggiBadan, jenisKelamin);
 
   console.log({ body: request.body });
   response.json({

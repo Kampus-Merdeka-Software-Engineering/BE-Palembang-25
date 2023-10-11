@@ -23,5 +23,5 @@ project.use(router);
 startSequelize(sequelize);
 
 project.listen(port, () => {
-    console.log('Aplikasi FIT FOR LIFE sedang berjalan di port ${port}');
+    console.log(`Aplikasi FIT FOR LIFE sedang berjalan di port ${port}`);
 });
